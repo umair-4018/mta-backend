@@ -13,7 +13,9 @@ app.use(express.json()); // This line is sufficient for handling JSON data
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/public/uploads", express.static("public/uploads"));
-
+app.get("/",(req,res)=>{
+  res.send("hellow")
+})
 app.use("/api", routes);
 
 app.listen(port, () => {

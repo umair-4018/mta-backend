@@ -25,7 +25,7 @@ const userSchema = new mongoose.Schema({
   token: {
     type: String,
   },
-  address: { type: mongoose.Schema.Types.ObjectId, ref: "Billing" },
+  // address: { type: mongoose.Schema.Types.ObjectId, ref: "Billing" },
   createdAt: {
     type: Date,
     default: Date.now,
