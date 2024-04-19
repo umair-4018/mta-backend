@@ -1,13 +1,6 @@
 import express from "express";
-import {
-  addToCart,
-  getAllItems,
-  getAllOrders,
-  getItemById,
-  saveBilling,
-  stripePayment,
-} from "../../services/BillingServices.js";
 import verifyTokens from "../../middleware/index.js";
+import { addToCart, getAllItems, getAllOrders, getItemById, saveBilling, stripePayment } from "../../controller/billingController/BillingController.js";
 const billingRoute = express.Router();
 
 billingRoute

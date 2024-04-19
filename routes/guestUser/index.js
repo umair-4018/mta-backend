@@ -1,5 +1,5 @@
 import express from "express";
-import { CreateGuestUser } from "../../services/GuestUserServices.js";
+import { CreateGuestUser } from "../../controller/guestController/GuestUserController.js";
 const guestUserRoute = express.Router();
 
 guestUserRoute.post("/register", CreateGuestUser);

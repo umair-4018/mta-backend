@@ -6,7 +6,7 @@ import {
   getAllProducts,
   getSingleProduct,
   updateProduct,
-} from "../../services/ProductServices.js";
+} from "../../controller/productController/ProductController.js";
 const storage = multer.diskStorage({
   destination: "./public/uploads/",
   filename: (req, file, cb) => {
