@@ -1,5 +1,4 @@
 
-
 import express from "express";
 import { authLogin, authRegister, forgetPassword, getAllUsers, loginWithGoogle, removeUser, resetPassword, updateUser } from "../../controller/authController/AuthController.js";
 const authRoute = express.Router();
